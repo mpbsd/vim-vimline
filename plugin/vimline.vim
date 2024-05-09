@@ -63,4 +63,4 @@ function! VimSetMyStatusline() abort
   return join(l:components)
 endfunction
 
-set statuslins=%!VimSetMyStatusline()
+set statusline=%!VimSetMyStatusline()
