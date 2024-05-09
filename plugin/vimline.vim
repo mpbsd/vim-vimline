@@ -2,7 +2,7 @@
 " Maintainer:  @mpbsd
 " Version:     0.1
 
-function! VimGetMode(mode) abort
+function! VimDisplayCurrentMode(mode) abort
   " MODE {{{
   let l:MODE = {
         \  'n'    : 'NORMAL',
@@ -50,8 +50,8 @@ endfunction
 function! VimSetMyStatusline() abort
   let l:components = [
         \  '[%n]',
-        \  '%{VimGetMode(mode())}',
-        \  '%F',
+        \  '%{VimDisplayCurrentMode(mode())}',
+        \  '%t',
         \  '%m',
         \  '%=',
         \  '%{&fileencoding}',
