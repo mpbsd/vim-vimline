@@ -47,7 +47,7 @@ function! VimGetMode(mode) abort
   endif
 endfunction
 
-function! VimSetMyvimlineine() abort
+function! VimSetMyStatusline() abort
   let l:components = [
         \  '[%n]',
         \  '%{VimGetMode(mode())}',
@@ -63,4 +63,4 @@ function! VimSetMyvimlineine() abort
   return join(l:components)
 endfunction
 
-set vimlineine=%!VimSetMyvimlineine()
+set statuslins=%!VimSetMyStatusline()
