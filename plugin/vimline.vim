@@ -35,7 +35,7 @@ function! VimDisplayCurrentMode(mode) abort
         \  'c'    : 'COMMAND',
         \  'cv'   : 'EX',
         \  'ce'   : 'EX',
-        \  'r'    : 'REPLACE',
+        \  'r'    : 'PROMPT',
         \  'rm'   : 'MORE',
         \  'r?'   : 'CONFIRM',
         \  '!'    : 'SHELL',
